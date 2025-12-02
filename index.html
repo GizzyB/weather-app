@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Simple Weather App</h1>
+
+    <form id="weatherForm" autocomplete="off">
+      <label for="city">Enter city</label>
+      <div class="input-row">
+        <input id="city" name="city" type="text" placeholder="e.g. London" required />
+        <button type="submit" id="getWeather">Get Weather</button>
+      </div>
+
+      <!-- Temperature unit selector -->
+      <div class="unit-row">
+        <label><input type="radio" name="unit" value="metric" checked> Celsius (°C)</label>
+        <label><input type="radio" name="unit" value="imperial"> Fahrenheit (°F)</label>
+      </div>
+    </form>
+
+    <div id="status" class="status" aria-live="polite"></div>
+
+    <!-- Current weather card -->
+    <section id="result" class="card hidden">
+      <div class="location" id="location"></div>
+
+      <div class="main-info">
+        <div class="temperature" id="temp"></div>
+        <div class="description" id="desc"></div>
+      </div>
+
+      <ul class="details">
+        <li><strong>Humidity:</strong> <span id="humidity"></span>%</li>
+        <li><strong>Wind:</strong> <span id="wind"></span> <span id="windUnit"></span></li>
+        <li><strong>Coordinates:</strong> <span id="coords"></span></li>
+      </ul>
+    </section>
+
+    <!-- 5-day forecast panel -->
+    <section id="forecast" class="forecast hidden">
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </section>
+
+    <footer>
+      <p>Data from OpenWeather. Unofficial demo for portfolio use.</p>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
