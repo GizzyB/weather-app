@@ -45,19 +45,16 @@ This project demonstrates how to consume a REST API, display weather data, build
 
 ---
 
-## **Screenshots**
+### 📸 Screenshots
 
 ### Interface
+![Weather app interface showing search box and current weather results](screenshots/interface.png)
 
-![Weather App main interface screenshot](screenshots/interface.png)
+### Forecast Results
+![5-day forecast display for entered city](screenshots/forecast.png)
 
-### Current Weather
-
-![Weather Result](screenshots/result.png)
-
-### 5-Day Forecast
-
-![Forecast](screenshots/forecast.png)
+### Example Result
+![Example showing temperature, weather description, and icons](screenshots/result.png)
 
 ---
 
@@ -206,6 +203,19 @@ This project demonstrates:
 > “Hi, my name is **Gisèle Brown**, and this is my Weather App project. I built it to demonstrate API integration, JavaScript logic, and clean documentation. The app displays current weather conditions and a 5-day forecast with Celsius/Fahrenheit toggling, icons, and error handling. You can try the live version on GitHub Pages and view my code in this repository. Thank you for watching.”
 
 ---
+
+## 🚀 Future Improvements
+
+Here are some enhancements planned for future versions of the Weather App:
+
+- **Add temperature unit toggle (°C ↔ °F):** Allow users to switch between Celsius and Fahrenheit.
+- **Add a loading spinner:** Improve user experience by showing a spinner while data is being fetched.
+- **Improve error messages:** Provide clearer messages for invalid cities, network issues, or API limits.
+- **Add geolocation support:** Allow the app to detect the user’s location and automatically show local weather.
+- **Add theme toggle:** Light/Dark mode for better accessibility and modern UI.
+- **Improve responsiveness:** Optimize layout for mobile devices, tablets, and large screens.
+
+___
 
 ## **License**
 
